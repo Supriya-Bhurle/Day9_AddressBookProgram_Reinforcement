@@ -1,2 +1,4 @@
-package com.bridgelabz;public class Contacts {
+package com.bridgelabz;
+
+public class Contacts {
 }
