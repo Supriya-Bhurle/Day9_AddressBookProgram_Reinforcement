@@ -14,7 +14,7 @@ public class AddressBookMain {
         while(result!=4) {
             System.out.println();
             System.out.println("Select the option from following Menu");
-            System.out.println("1. Add" + " 2. Edit" + " 3. Print");
+            System.out.println("1. Add" + " 2. Edit" + " 3. Print" + " 4. Delete" + " 5. Stop");
             result = scanner.nextInt();
             switch (result) {
                 case 1:
@@ -27,6 +27,9 @@ public class AddressBookMain {
                 case 3 :
                     inputMethods.print(person,array);
                 case 4:
+                    inputMethods.delete(person, array);
+                    break;
+                case 5:
                     System.out.println("Thank You!!");
                     break;
                 default:
