@@ -90,4 +90,19 @@ public class AddressBook {
                 break;
         }
     }
+    public void delete(int person,Contacts[] array) {
+        System.out.println("Enter name you want to delete:");
+        String deleteName = sc.next();
+        for (int i = 0; i < person; i++){
+            if (deleteName.equals(array[i].getFirstName())){
+                for (int j=i; j<person-1;j++){
+                    array[j] = array[j+1];
+                }
+            }
+        }
+        for (int i=0;i<person-1;i++){
+            System.out.println(array[i].getFirstName() + " " + array[i].getLastName() + " " + array[i].getAddress() + " "
+                    + array[i].getCity() + " " + array[i].getState() + " " + array[i].getEmail() + " " + array[i].getZip() + " "+array[i].getPhoneNo());
+        }
+    }
 }
