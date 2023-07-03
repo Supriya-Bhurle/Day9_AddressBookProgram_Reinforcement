@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AddressBook {
@@ -105,4 +106,6 @@ public class AddressBook {
                     + array[i].getCity() + " " + array[i].getState() + " " + array[i].getEmail() + " " + array[i].getZip() + " "+array[i].getPhoneNo());
         }
     }
+
+
 }
